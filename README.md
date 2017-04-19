@@ -4,6 +4,14 @@
 Android Sliding Up Panel
 =========================
 
+## FORK
+-------------------------
+This is a fork, which contains the following changes:
+- Bugfix: SlidingUpPanelLayout ignores setPanelState(), as long as animated settling is in progress.
+-------------------------
+
+## Original Document
+
 This library provides a simple way to add a draggable sliding up panel (popularized by Google Music and Google Maps) to your Android application.
 
 As seen in Umano Android App (now acquired by Dropbox):
