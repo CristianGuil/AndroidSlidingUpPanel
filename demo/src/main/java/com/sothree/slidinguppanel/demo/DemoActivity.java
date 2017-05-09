@@ -149,6 +149,15 @@ public class DemoActivity extends ActionBarActivity {
                         mLayout.setPanelState(PanelState.COLLAPSED);
                         item.setTitle(R.string.action_hide);
                     }
+
+                    // Test for fast state change
+//                    mLayout.setPanelState(PanelState.ANCHORED);
+//                    mLayout.postDelayed(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            mLayout.setPanelState(PanelState.COLLAPSED);
+//                        }
+//                    },100);
                 }
                 return true;
             }
