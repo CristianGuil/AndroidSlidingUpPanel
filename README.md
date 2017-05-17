@@ -7,6 +7,7 @@ Android Sliding Up Panel
 ## FORK
 -------------------------
 This is a fork, which contains the following changes:
+- New Feature: Horizontal Sliding. The SlidingUpPanel is now able to be pulled up, down, left or right.
 - Bugfix: SlidingUpPanelLayout ignores setPanelState(), as long as animated settling is in progress.
 -------------------------
 
