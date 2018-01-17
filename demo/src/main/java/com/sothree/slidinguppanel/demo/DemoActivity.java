@@ -1,10 +1,9 @@
 package com.sothree.slidinguppanel.demo;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
@@ -18,6 +17,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout.PanelSlideListener;
@@ -26,7 +26,7 @@ import com.sothree.slidinguppanel.SlidingUpPanelLayout.PanelState;
 import java.util.Arrays;
 import java.util.List;
 
-public class DemoActivity extends ActionBarActivity {
+public class DemoActivity extends Activity {
     private static final String TAG = "DemoActivity";
 
     private SlidingUpPanelLayout mLayout;
@@ -36,7 +36,7 @@ public class DemoActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo);
 
-        setSupportActionBar((Toolbar) findViewById(R.id.main_toolbar));
+//        setSupportActionBar((Toolbar) findViewById(R.id.main_toolbar));
 
         ListView lv = (ListView) findViewById(R.id.list);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
